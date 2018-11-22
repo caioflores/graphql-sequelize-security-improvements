@@ -1,0 +1,17 @@
+"""
+User: represents a user
+"""
+type User {
+  """
+  User id
+  """
+  id: String
+  """
+  User email
+  """
+  email: String
+  """
+  User password
+  """
+  password: String
+}

@@ -1,0 +1,13 @@
+"""
+AuthToken: represents a users authentication token
+"""
+type AuthToken {
+  """
+  Token
+  """
+  token: String!
+  """
+  User
+  """
+  user: User!
+}

@@ -1,0 +1,12 @@
+{
+  "rules": [
+    "defined-types-are-used",
+    "deprecations-have-a-reason",
+    "enum-values-have-descriptions",
+    "enum-values-sorted-alphabetically",
+    "fields-have-descriptions",
+    "input-object-values-have-descriptions",
+    "types-are-capitalized",
+    "types-have-descriptions"
+  ]
+}

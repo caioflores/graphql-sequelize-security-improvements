@@ -1,0 +1,15 @@
+"Queries"
+type Query {
+  """
+  Get a user
+  """
+  user(id: String!): User
+  """
+  Get user credentials
+  """
+  login(email: String!, password: String!): AuthToken
+  """
+  Get a task
+  """
+  task(id: String!): Task
+}

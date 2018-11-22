@@ -1,0 +1,51 @@
+{
+  "name": "graphql-sequelize-security-improvements",
+  "version": "0.1.0",
+  "description": "An example implementation of a server using GraphQL, graphql-yoga and Sequelize (with PotgreSQL).",
+  "main": "src/index.js",
+  "author": {
+    "name": "Caio Flores",
+    "email": "caiopflores@gmail.com",
+    "url": "https://github.com/caioflores"
+  },
+  "homepage": "https://github.com/caioflores/graphql-sequelize-security-improvements",
+  "bugs": {
+    "url": "https://github.com/caioflores/graphql-sequelize-security-improvements/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caioflores/graphql-sequelize-security-improvements.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -e js,graphql",
+    "lint": "eslint src/ test index.js",
+    "glint": "graphql-schema-linter src/graphql/queries/*.graphql src/graphql/types/*.graphql src/graphql/enums/*.graphql src/graphql/resolvers/*.graphql",
+    "lintall": "npm run lint && npm run glint"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.2",
+    "dotenv": "^6.0.0",
+    "graphql": "^14.0.2",
+    "graphql-yoga": "^1.16.7",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.10",
+    "merge-graphql-schemas": "^1.5.8",
+    "pg": "^7.6.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.2"
+  }
+}
